@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F34F320D18E1A77A0070649E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34F320C18E1A77A0070649E /* MobileCoreServices.framework */; };
+		F34F320F18E1A8CC0070649E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34F320E18E1A8CC0070649E /* CoreFoundation.framework */; };
+		F34F321118E1B23E0070649E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34F321018E1B23E0070649E /* AssetsLibrary.framework */; };
+		F357927618E0E6940068D312 /* itkLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F357927518E0E6940068D312 /* itkLogo.jpg */; };
+		F379013318E12CA200BEFD85 /* itkiOSImageIO.mm in Sources */ = {isa = PBXBuildFile; fileRef = F379013218E12CA200BEFD85 /* itkiOSImageIO.mm */; };
+		F3BB083318D8A4EA0088CA3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BB083218D8A4EA0088CA3C /* Foundation.framework */; };
+		F3BB083518D8A4EA0088CA3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BB083418D8A4EA0088CA3C /* CoreGraphics.framework */; };
+		F3BB083718D8A4EA0088CA3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BB083618D8A4EA0088CA3C /* UIKit.framework */; };
+		F3BB083D18D8A4EA0088CA3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3BB083B18D8A4EA0088CA3C /* InfoPlist.strings */; };
+		F3BB083F18D8A4EA0088CA3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3BB083E18D8A4EA0088CA3C /* main.m */; };
+		F3BB084318D8A4EA0088CA3C /* itkAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3BB084218D8A4EA0088CA3C /* itkAppDelegate.m */; };
+		F3BB084618D8A4EA0088CA3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3BB084418D8A4EA0088CA3C /* Main.storyboard */; };
+		F3BB084918D8A4EA0088CA3C /* itkViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3BB084818D8A4EA0088CA3C /* itkViewController.mm */; };
+		F3BB084B18D8A4EA0088CA3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3BB084A18D8A4EA0088CA3C /* Images.xcassets */; };
+		F3BB085218D8A4EA0088CA3C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BB085118D8A4EA0088CA3C /* XCTest.framework */; };
+		F3BB085318D8A4EA0088CA3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BB083218D8A4EA0088CA3C /* Foundation.framework */; };
+		F3BB085418D8A4EA0088CA3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BB083618D8A4EA0088CA3C /* UIKit.framework */; };
+		F3BB085C18D8A4EA0088CA3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3BB085A18D8A4EA0088CA3C /* InfoPlist.strings */; };
+		F3BB085E18D8A4EA0088CA3C /* testiOSItkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3BB085D18D8A4EA0088CA3C /* testiOSItkTests.m */; };
+		F3CF824618DB477A001B0858 /* libITKAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF822718DB477A001B0858 /* libITKAlgorithms.a */; };
+		F3CF824718DB477A001B0858 /* libITKBasicFilters.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF822818DB477A001B0858 /* libITKBasicFilters.a */; };
+		F3CF824818DB477A001B0858 /* libITKCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF822918DB477A001B0858 /* libITKCommon.a */; };
+		F3CF824918DB477A001B0858 /* libITKDICOMParser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF822A18DB477A001B0858 /* libITKDICOMParser.a */; };
+		F3CF824A18DB477A001B0858 /* libITKEXPAT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF822B18DB477A001B0858 /* libITKEXPAT.a */; };
+		F3CF824B18DB477A001B0858 /* libITKFEM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF822C18DB477A001B0858 /* libITKFEM.a */; };
+		F3CF824C18DB477A001B0858 /* libitkgdcm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF822D18DB477A001B0858 /* libitkgdcm.a */; };
+		F3CF824D18DB477A001B0858 /* libITKIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF822E18DB477A001B0858 /* libITKIO.a */; };
+		F3CF824E18DB477A001B0858 /* libitkjpeg8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF822F18DB477A001B0858 /* libitkjpeg8.a */; };
+		F3CF824F18DB477A001B0858 /* libitkjpeg12.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF823018DB477A001B0858 /* libitkjpeg12.a */; };
+		F3CF825018DB477A001B0858 /* libitkjpeg16.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF823118DB477A001B0858 /* libitkjpeg16.a */; };
+		F3CF825118DB477A001B0858 /* libITKMetaIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF823218DB477A001B0858 /* libITKMetaIO.a */; };
+		F3CF825218DB477A001B0858 /* libitkNetlibSlatec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF823318DB477A001B0858 /* libitkNetlibSlatec.a */; };
+		F3CF825318DB477A001B0858 /* libITKniftiio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF823418DB477A001B0858 /* libITKniftiio.a */; };
+		F3CF825418DB477A001B0858 /* libITKNrrdIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF823518DB477A001B0858 /* libITKNrrdIO.a */; };
+		F3CF825518DB477A001B0858 /* libITKNumerics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF823618DB477A001B0858 /* libITKNumerics.a */; };
+		F3CF825618DB477A001B0858 /* libitkopenjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF823718DB477A001B0858 /* libitkopenjpeg.a */; };
+		F3CF825718DB477A001B0858 /* libitkpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF823818DB477A001B0858 /* libitkpng.a */; };
+		F3CF825818DB477A001B0858 /* libITKSpatialObject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF823918DB477A001B0858 /* libITKSpatialObject.a */; };
+		F3CF825918DB477A001B0858 /* libITKStatistics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF823A18DB477A001B0858 /* libITKStatistics.a */; };
+		F3CF825A18DB477A001B0858 /* libitksys.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF823B18DB477A001B0858 /* libitksys.a */; };
+		F3CF825B18DB477A001B0858 /* libitktestlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF823C18DB477A001B0858 /* libitktestlib.a */; };
+		F3CF825C18DB477A001B0858 /* libitktiff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF823D18DB477A001B0858 /* libitktiff.a */; };
+		F3CF825D18DB477A001B0858 /* libitkv3p_lsqr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF823E18DB477A001B0858 /* libitkv3p_lsqr.a */; };
+		F3CF825E18DB477A001B0858 /* libitkv3p_netlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF823F18DB477A001B0858 /* libitkv3p_netlib.a */; };
+		F3CF825F18DB477A001B0858 /* libitkvcl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF824018DB477A001B0858 /* libitkvcl.a */; };
+		F3CF826018DB477A001B0858 /* libitkvnl_algo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF824118DB477A001B0858 /* libitkvnl_algo.a */; };
+		F3CF826118DB477A001B0858 /* libitkvnl_inst.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF824218DB477A001B0858 /* libitkvnl_inst.a */; };
+		F3CF826218DB477A001B0858 /* libitkvnl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF824318DB477A001B0858 /* libitkvnl.a */; };
+		F3CF826318DB477A001B0858 /* libitkzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF824418DB477A001B0858 /* libitkzlib.a */; };
+		F3CF826418DB477A001B0858 /* libITKznz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF824518DB477A001B0858 /* libITKznz.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3BB085518D8A4EA0088CA3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3BB082718D8A4EA0088CA3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3BB082E18D8A4EA0088CA3C;
+			remoteInfo = testiOSItk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F34F320C18E1A77A0070649E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F34F320E18E1A8CC0070649E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F34F321018E1B23E0070649E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		F357927518E0E6940068D312 /* itkLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = itkLogo.jpg; sourceTree = "<group>"; };
+		F379013018E1232E00BEFD85 /* itkiOSImageIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = itkiOSImageIO.h; sourceTree = "<group>"; };
+		F379013218E12CA200BEFD85 /* itkiOSImageIO.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = itkiOSImageIO.mm; sourceTree = "<group>"; };
+		F3BB082F18D8A4EA0088CA3C /* testiOSItk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testiOSItk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3BB083218D8A4EA0088CA3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F3BB083418D8A4EA0088CA3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F3BB083618D8A4EA0088CA3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F3BB083A18D8A4EA0088CA3C /* testiOSItk-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "testiOSItk-Info.plist"; sourceTree = "<group>"; };
+		F3BB083C18D8A4EA0088CA3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F3BB083E18D8A4EA0088CA3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F3BB084018D8A4EA0088CA3C /* testiOSItk-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testiOSItk-Prefix.pch"; sourceTree = "<group>"; };
+		F3BB084118D8A4EA0088CA3C /* itkAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = itkAppDelegate.h; sourceTree = "<group>"; };
+		F3BB084218D8A4EA0088CA3C /* itkAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = itkAppDelegate.m; sourceTree = "<group>"; };
+		F3BB084518D8A4EA0088CA3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3BB084718D8A4EA0088CA3C /* itkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = itkViewController.h; sourceTree = "<group>"; };
+		F3BB084818D8A4EA0088CA3C /* itkViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = itkViewController.mm; sourceTree = "<group>"; };
+		F3BB084A18D8A4EA0088CA3C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F3BB085018D8A4EA0088CA3C /* testiOSItkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testiOSItkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3BB085118D8A4EA0088CA3C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F3BB085918D8A4EA0088CA3C /* testiOSItkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "testiOSItkTests-Info.plist"; sourceTree = "<group>"; };
+		F3BB085B18D8A4EA0088CA3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F3BB085D18D8A4EA0088CA3C /* testiOSItkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testiOSItkTests.m; sourceTree = "<group>"; };
+		F3CF822718DB477A001B0858 /* libITKAlgorithms.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libITKAlgorithms.a; path = iOS/libITKAlgorithms.a; sourceTree = "<group>"; };
+		F3CF822818DB477A001B0858 /* libITKBasicFilters.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libITKBasicFilters.a; path = iOS/libITKBasicFilters.a; sourceTree = "<group>"; };
+		F3CF822918DB477A001B0858 /* libITKCommon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libITKCommon.a; path = iOS/libITKCommon.a; sourceTree = "<group>"; };
+		F3CF822A18DB477A001B0858 /* libITKDICOMParser.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libITKDICOMParser.a; path = iOS/libITKDICOMParser.a; sourceTree = "<group>"; };
+		F3CF822B18DB477A001B0858 /* libITKEXPAT.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libITKEXPAT.a; path = iOS/libITKEXPAT.a; sourceTree = "<group>"; };
+		F3CF822C18DB477A001B0858 /* libITKFEM.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libITKFEM.a; path = iOS/libITKFEM.a; sourceTree = "<group>"; };
+		F3CF822D18DB477A001B0858 /* libitkgdcm.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libitkgdcm.a; path = iOS/libitkgdcm.a; sourceTree = "<group>"; };
+		F3CF822E18DB477A001B0858 /* libITKIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libITKIO.a; path = iOS/libITKIO.a; sourceTree = "<group>"; };
+		F3CF822F18DB477A001B0858 /* libitkjpeg8.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libitkjpeg8.a; path = iOS/libitkjpeg8.a; sourceTree = "<group>"; };
+		F3CF823018DB477A001B0858 /* libitkjpeg12.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libitkjpeg12.a; path = iOS/libitkjpeg12.a; sourceTree = "<group>"; };
+		F3CF823118DB477A001B0858 /* libitkjpeg16.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libitkjpeg16.a; path = iOS/libitkjpeg16.a; sourceTree = "<group>"; };
+		F3CF823218DB477A001B0858 /* libITKMetaIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libITKMetaIO.a; path = iOS/libITKMetaIO.a; sourceTree = "<group>"; };
+		F3CF823318DB477A001B0858 /* libitkNetlibSlatec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libitkNetlibSlatec.a; path = iOS/libitkNetlibSlatec.a; sourceTree = "<group>"; };
+		F3CF823418DB477A001B0858 /* libITKniftiio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libITKniftiio.a; path = iOS/libITKniftiio.a; sourceTree = "<group>"; };
+		F3CF823518DB477A001B0858 /* libITKNrrdIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libITKNrrdIO.a; path = iOS/libITKNrrdIO.a; sourceTree = "<group>"; };
+		F3CF823618DB477A001B0858 /* libITKNumerics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libITKNumerics.a; path = iOS/libITKNumerics.a; sourceTree = "<group>"; };
+		F3CF823718DB477A001B0858 /* libitkopenjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libitkopenjpeg.a; path = iOS/libitkopenjpeg.a; sourceTree = "<group>"; };
+		F3CF823818DB477A001B0858 /* libitkpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libitkpng.a; path = iOS/libitkpng.a; sourceTree = "<group>"; };
+		F3CF823918DB477A001B0858 /* libITKSpatialObject.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libITKSpatialObject.a; path = iOS/libITKSpatialObject.a; sourceTree = "<group>"; };
+		F3CF823A18DB477A001B0858 /* libITKStatistics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libITKStatistics.a; path = iOS/libITKStatistics.a; sourceTree = "<group>"; };
+		F3CF823B18DB477A001B0858 /* libitksys.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libitksys.a; path = iOS/libitksys.a; sourceTree = "<group>"; };
+		F3CF823C18DB477A001B0858 /* libitktestlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libitktestlib.a; path = iOS/libitktestlib.a; sourceTree = "<group>"; };
+		F3CF823D18DB477A001B0858 /* libitktiff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libitktiff.a; path = iOS/libitktiff.a; sourceTree = "<group>"; };
+		F3CF823E18DB477A001B0858 /* libitkv3p_lsqr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libitkv3p_lsqr.a; path = iOS/libitkv3p_lsqr.a; sourceTree = "<group>"; };
+		F3CF823F18DB477A001B0858 /* libitkv3p_netlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libitkv3p_netlib.a; path = iOS/libitkv3p_netlib.a; sourceTree = "<group>"; };
+		F3CF824018DB477A001B0858 /* libitkvcl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libitkvcl.a; path = iOS/libitkvcl.a; sourceTree = "<group>"; };
+		F3CF824118DB477A001B0858 /* libitkvnl_algo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libitkvnl_algo.a; path = iOS/libitkvnl_algo.a; sourceTree = "<group>"; };
+		F3CF824218DB477A001B0858 /* libitkvnl_inst.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libitkvnl_inst.a; path = iOS/libitkvnl_inst.a; sourceTree = "<group>"; };
+		F3CF824318DB477A001B0858 /* libitkvnl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libitkvnl.a; path = iOS/libitkvnl.a; sourceTree = "<group>"; };
+		F3CF824418DB477A001B0858 /* libitkzlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libitkzlib.a; path = iOS/libitkzlib.a; sourceTree = "<group>"; };
+		F3CF824518DB477A001B0858 /* libITKznz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libITKznz.a; path = iOS/libITKznz.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3BB082C18D8A4EA0088CA3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F34F321118E1B23E0070649E /* AssetsLibrary.framework in Frameworks */,
+				F34F320F18E1A8CC0070649E /* CoreFoundation.framework in Frameworks */,
+				F34F320D18E1A77A0070649E /* MobileCoreServices.framework in Frameworks */,
+				F3CF824618DB477A001B0858 /* libITKAlgorithms.a in Frameworks */,
+				F3CF824718DB477A001B0858 /* libITKBasicFilters.a in Frameworks */,
+				F3CF824818DB477A001B0858 /* libITKCommon.a in Frameworks */,
+				F3CF824918DB477A001B0858 /* libITKDICOMParser.a in Frameworks */,
+				F3CF824A18DB477A001B0858 /* libITKEXPAT.a in Frameworks */,
+				F3CF824B18DB477A001B0858 /* libITKFEM.a in Frameworks */,
+				F3CF824C18DB477A001B0858 /* libitkgdcm.a in Frameworks */,
+				F3CF824D18DB477A001B0858 /* libITKIO.a in Frameworks */,
+				F3CF824E18DB477A001B0858 /* libitkjpeg8.a in Frameworks */,
+				F3CF824F18DB477A001B0858 /* libitkjpeg12.a in Frameworks */,
+				F3CF825018DB477A001B0858 /* libitkjpeg16.a in Frameworks */,
+				F3CF825118DB477A001B0858 /* libITKMetaIO.a in Frameworks */,
+				F3CF825218DB477A001B0858 /* libitkNetlibSlatec.a in Frameworks */,
+				F3CF825318DB477A001B0858 /* libITKniftiio.a in Frameworks */,
+				F3CF825418DB477A001B0858 /* libITKNrrdIO.a in Frameworks */,
+				F3CF825518DB477A001B0858 /* libITKNumerics.a in Frameworks */,
+				F3CF825618DB477A001B0858 /* libitkopenjpeg.a in Frameworks */,
+				F3CF825718DB477A001B0858 /* libitkpng.a in Frameworks */,
+				F3CF825818DB477A001B0858 /* libITKSpatialObject.a in Frameworks */,
+				F3CF825918DB477A001B0858 /* libITKStatistics.a in Frameworks */,
+				F3CF825A18DB477A001B0858 /* libitksys.a in Frameworks */,
+				F3CF825B18DB477A001B0858 /* libitktestlib.a in Frameworks */,
+				F3CF825C18DB477A001B0858 /* libitktiff.a in Frameworks */,
+				F3CF825D18DB477A001B0858 /* libitkv3p_lsqr.a in Frameworks */,
+				F3CF825E18DB477A001B0858 /* libitkv3p_netlib.a in Frameworks */,
+				F3CF825F18DB477A001B0858 /* libitkvcl.a in Frameworks */,
+				F3CF826018DB477A001B0858 /* libitkvnl_algo.a in Frameworks */,
+				F3CF826118DB477A001B0858 /* libitkvnl_inst.a in Frameworks */,
+				F3CF826218DB477A001B0858 /* libitkvnl.a in Frameworks */,
+				F3CF826318DB477A001B0858 /* libitkzlib.a in Frameworks */,
+				F3CF826418DB477A001B0858 /* libITKznz.a in Frameworks */,
+				F3BB083518D8A4EA0088CA3C /* CoreGraphics.framework in Frameworks */,
+				F3BB083718D8A4EA0088CA3C /* UIKit.framework in Frameworks */,
+				F3BB083318D8A4EA0088CA3C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3BB084D18D8A4EA0088CA3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3BB085218D8A4EA0088CA3C /* XCTest.framework in Frameworks */,
+				F3BB085418D8A4EA0088CA3C /* UIKit.framework in Frameworks */,
+				F3BB085318D8A4EA0088CA3C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3BB082618D8A4EA0088CA3C = {
+			isa = PBXGroup;
+			children = (
+				F379013218E12CA200BEFD85 /* itkiOSImageIO.mm */,
+				F379013018E1232E00BEFD85 /* itkiOSImageIO.h */,
+				F3BB083818D8A4EA0088CA3C /* testiOSItk */,
+				F3BB085718D8A4EA0088CA3C /* testiOSItkTests */,
+				F3BB083118D8A4EA0088CA3C /* Frameworks */,
+				F3BB083018D8A4EA0088CA3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3BB083018D8A4EA0088CA3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3BB082F18D8A4EA0088CA3C /* testiOSItk.app */,
+				F3BB085018D8A4EA0088CA3C /* testiOSItkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3BB083118D8A4EA0088CA3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F34F321018E1B23E0070649E /* AssetsLibrary.framework */,
+				F34F320E18E1A8CC0070649E /* CoreFoundation.framework */,
+				F34F320C18E1A77A0070649E /* MobileCoreServices.framework */,
+				F3CF822718DB477A001B0858 /* libITKAlgorithms.a */,
+				F3CF822818DB477A001B0858 /* libITKBasicFilters.a */,
+				F3CF822918DB477A001B0858 /* libITKCommon.a */,
+				F3CF822A18DB477A001B0858 /* libITKDICOMParser.a */,
+				F3CF822B18DB477A001B0858 /* libITKEXPAT.a */,
+				F3CF822C18DB477A001B0858 /* libITKFEM.a */,
+				F3CF822D18DB477A001B0858 /* libitkgdcm.a */,
+				F3CF822E18DB477A001B0858 /* libITKIO.a */,
+				F3CF822F18DB477A001B0858 /* libitkjpeg8.a */,
+				F3CF823018DB477A001B0858 /* libitkjpeg12.a */,
+				F3CF823118DB477A001B0858 /* libitkjpeg16.a */,
+				F3CF823218DB477A001B0858 /* libITKMetaIO.a */,
+				F3CF823318DB477A001B0858 /* libitkNetlibSlatec.a */,
+				F3CF823418DB477A001B0858 /* libITKniftiio.a */,
+				F3CF823518DB477A001B0858 /* libITKNrrdIO.a */,
+				F3CF823618DB477A001B0858 /* libITKNumerics.a */,
+				F3CF823718DB477A001B0858 /* libitkopenjpeg.a */,
+				F3CF823818DB477A001B0858 /* libitkpng.a */,
+				F3CF823918DB477A001B0858 /* libITKSpatialObject.a */,
+				F3CF823A18DB477A001B0858 /* libITKStatistics.a */,
+				F3CF823B18DB477A001B0858 /* libitksys.a */,
+				F3CF823C18DB477A001B0858 /* libitktestlib.a */,
+				F3CF823D18DB477A001B0858 /* libitktiff.a */,
+				F3CF823E18DB477A001B0858 /* libitkv3p_lsqr.a */,
+				F3CF823F18DB477A001B0858 /* libitkv3p_netlib.a */,
+				F3CF824018DB477A001B0858 /* libitkvcl.a */,
+				F3CF824118DB477A001B0858 /* libitkvnl_algo.a */,
+				F3CF824218DB477A001B0858 /* libitkvnl_inst.a */,
+				F3CF824318DB477A001B0858 /* libitkvnl.a */,
+				F3CF824418DB477A001B0858 /* libitkzlib.a */,
+				F3CF824518DB477A001B0858 /* libITKznz.a */,
+				F3BB083218D8A4EA0088CA3C /* Foundation.framework */,
+				F3BB083418D8A4EA0088CA3C /* CoreGraphics.framework */,
+				F3BB083618D8A4EA0088CA3C /* UIKit.framework */,
+				F3BB085118D8A4EA0088CA3C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3BB083818D8A4EA0088CA3C /* testiOSItk */ = {
+			isa = PBXGroup;
+			children = (
+				F357927518E0E6940068D312 /* itkLogo.jpg */,
+				F3BB084118D8A4EA0088CA3C /* itkAppDelegate.h */,
+				F3BB084218D8A4EA0088CA3C /* itkAppDelegate.m */,
+				F3BB084418D8A4EA0088CA3C /* Main.storyboard */,
+				F3BB084718D8A4EA0088CA3C /* itkViewController.h */,
+				F3BB084818D8A4EA0088CA3C /* itkViewController.mm */,
+				F3BB084A18D8A4EA0088CA3C /* Images.xcassets */,
+				F3BB083918D8A4EA0088CA3C /* Supporting Files */,
+			);
+			path = testiOSItk;
+			sourceTree = "<group>";
+		};
+		F3BB083918D8A4EA0088CA3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3BB083A18D8A4EA0088CA3C /* testiOSItk-Info.plist */,
+				F3BB083B18D8A4EA0088CA3C /* InfoPlist.strings */,
+				F3BB083E18D8A4EA0088CA3C /* main.m */,
+				F3BB084018D8A4EA0088CA3C /* testiOSItk-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3BB085718D8A4EA0088CA3C /* testiOSItkTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3BB085D18D8A4EA0088CA3C /* testiOSItkTests.m */,
+				F3BB085818D8A4EA0088CA3C /* Supporting Files */,
+			);
+			path = testiOSItkTests;
+			sourceTree = "<group>";
+		};
+		F3BB085818D8A4EA0088CA3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3BB085918D8A4EA0088CA3C /* testiOSItkTests-Info.plist */,
+				F3BB085A18D8A4EA0088CA3C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3BB082E18D8A4EA0088CA3C /* testiOSItk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3BB086118D8A4EA0088CA3C /* Build configuration list for PBXNativeTarget "testiOSItk" */;
+			buildPhases = (
+				F3BB082B18D8A4EA0088CA3C /* Sources */,
+				F3BB082C18D8A4EA0088CA3C /* Frameworks */,
+				F3BB082D18D8A4EA0088CA3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testiOSItk;
+			productName = testiOSItk;
+			productReference = F3BB082F18D8A4EA0088CA3C /* testiOSItk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3BB084F18D8A4EA0088CA3C /* testiOSItkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3BB086418D8A4EA0088CA3C /* Build configuration list for PBXNativeTarget "testiOSItkTests" */;
+			buildPhases = (
+				F3BB084C18D8A4EA0088CA3C /* Sources */,
+				F3BB084D18D8A4EA0088CA3C /* Frameworks */,
+				F3BB084E18D8A4EA0088CA3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3BB085618D8A4EA0088CA3C /* PBXTargetDependency */,
+			);
+			name = testiOSItkTests;
+			productName = testiOSItkTests;
+			productReference = F3BB085018D8A4EA0088CA3C /* testiOSItkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3BB082718D8A4EA0088CA3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = itk;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = ting;
+				TargetAttributes = {
+					F3BB084F18D8A4EA0088CA3C = {
+						TestTargetID = F3BB082E18D8A4EA0088CA3C;
+					};
+				};
+			};
+			buildConfigurationList = F3BB082A18D8A4EA0088CA3C /* Build configuration list for PBXProject "testiOSItk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3BB082618D8A4EA0088CA3C;
+			productRefGroup = F3BB083018D8A4EA0088CA3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3BB082E18D8A4EA0088CA3C /* testiOSItk */,
+				F3BB084F18D8A4EA0088CA3C /* testiOSItkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3BB082D18D8A4EA0088CA3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3BB084B18D8A4EA0088CA3C /* Images.xcassets in Resources */,
+				F3BB083D18D8A4EA0088CA3C /* InfoPlist.strings in Resources */,
+				F3BB084618D8A4EA0088CA3C /* Main.storyboard in Resources */,
+				F357927618E0E6940068D312 /* itkLogo.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3BB084E18D8A4EA0088CA3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3BB085C18D8A4EA0088CA3C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3BB082B18D8A4EA0088CA3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3BB083F18D8A4EA0088CA3C /* main.m in Sources */,
+				F3BB084318D8A4EA0088CA3C /* itkAppDelegate.m in Sources */,
+				F379013318E12CA200BEFD85 /* itkiOSImageIO.mm in Sources */,
+				F3BB084918D8A4EA0088CA3C /* itkViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3BB084C18D8A4EA0088CA3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3BB085E18D8A4EA0088CA3C /* testiOSItkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3BB085618D8A4EA0088CA3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3BB082E18D8A4EA0088CA3C /* testiOSItk */;
+			targetProxy = F3BB085518D8A4EA0088CA3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3BB083B18D8A4EA0088CA3C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3BB083C18D8A4EA0088CA3C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F3BB084418D8A4EA0088CA3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3BB084518D8A4EA0088CA3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3BB085A18D8A4EA0088CA3C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3BB085B18D8A4EA0088CA3C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3BB085F18D8A4EA0088CA3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Volumes/Learning/LiveInUGA/2014_spring/8850_ADV_BIO/ITK/src/InsightToolkit-3.0/Utilities/vxl/core",
+					"/Volumes/Learning/LiveInUGA/2014_spring/8850_ADV_BIO/ITK/src/InsightToolkit-3.0/Utilities/vxl/vcl",
+					"/Volumes/Learning/LiveInUGA/2014_spring/8850_ADV_BIO/ITK/src/InsightToolkit-3.0/Code/Common",
+					/Volumes/Learning/LiveInUGA/2014_spring/8850_ADV_BIO/ITK/bin/InsightToolkit/Utilities/vxl/vcl,
+					/Volumes/Learning/LiveInUGA/2014_spring/8850_ADV_BIO/ITK/bin/InsightToolkit,
+					/Volumes/Learning/LiveInUGA/2014_spring/8850_ADV_BIO/ITK/bin/InsightToolkit/Utilities/vxl/core,
+					"/Volumes/Learning/LiveInUGA/2014_spring/8850_ADV_BIO/ITK/src/InsightToolkit-3.0/Code/IO",
+					"/Volumes/Learning/LiveInUGA/2014_spring/8850_ADV_BIO/ITK/src/InsightToolkit-3.0/Code/BasicFilters",
+					/Volumes/Learning/LiveInUGA/2014_spring/8850_ADV_BIO/ITK/bin/InsightToolkit/Utilities,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = /Volumes/Learning/LiveInUGA/2014_spring/8850_ADV_BIO/testiOSItk/iOS;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos6.1;
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Debug;
+		};
+		F3BB086018D8A4EA0088CA3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Volumes/Learning/LiveInUGA/2014_spring/8850_ADV_BIO/ITK/src/InsightToolkit-3.0/Utilities/vxl/core",
+					"/Volumes/Learning/LiveInUGA/2014_spring/8850_ADV_BIO/ITK/src/InsightToolkit-3.0/Utilities/vxl/vcl",
+					"/Volumes/Learning/LiveInUGA/2014_spring/8850_ADV_BIO/ITK/src/InsightToolkit-3.0/Code/Common",
+					/Volumes/Learning/LiveInUGA/2014_spring/8850_ADV_BIO/ITK/bin/InsightToolkit/Utilities/vxl/vcl,
+					/Volumes/Learning/LiveInUGA/2014_spring/8850_ADV_BIO/ITK/bin/InsightToolkit,
+					/Volumes/Learning/LiveInUGA/2014_spring/8850_ADV_BIO/ITK/bin/InsightToolkit/Utilities/vxl/core,
+					"/Volumes/Learning/LiveInUGA/2014_spring/8850_ADV_BIO/ITK/src/InsightToolkit-3.0/Code/IO",
+					"/Volumes/Learning/LiveInUGA/2014_spring/8850_ADV_BIO/ITK/src/InsightToolkit-3.0/Code/BasicFilters",
+					/Volumes/Learning/LiveInUGA/2014_spring/8850_ADV_BIO/ITK/bin/InsightToolkit/Utilities,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = /Volumes/Learning/LiveInUGA/2014_spring/8850_ADV_BIO/testiOSItk/iOS;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos6.1;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Release;
+		};
+		F3BB086218D8A4EA0088CA3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "testiOSItk/testiOSItk-Prefix.pch";
+				INFOPLIST_FILE = "testiOSItk/testiOSItk-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOS",
+					/Volumes/Learning/LiveInUGA/2014_spring/8850_ADV_BIO/testiOSItk/iOS,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F3BB086318D8A4EA0088CA3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "testiOSItk/testiOSItk-Prefix.pch";
+				INFOPLIST_FILE = "testiOSItk/testiOSItk-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOS",
+					/Volumes/Learning/LiveInUGA/2014_spring/8850_ADV_BIO/testiOSItk/iOS,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F3BB086518D8A4EA0088CA3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/testiOSItk.app/testiOSItk";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "testiOSItk/testiOSItk-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "testiOSItkTests/testiOSItkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F3BB086618D8A4EA0088CA3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/testiOSItk.app/testiOSItk";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "testiOSItk/testiOSItk-Prefix.pch";
+				INFOPLIST_FILE = "testiOSItkTests/testiOSItkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3BB082A18D8A4EA0088CA3C /* Build configuration list for PBXProject "testiOSItk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3BB085F18D8A4EA0088CA3C /* Debug */,
+				F3BB086018D8A4EA0088CA3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3BB086118D8A4EA0088CA3C /* Build configuration list for PBXNativeTarget "testiOSItk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3BB086218D8A4EA0088CA3C /* Debug */,
+				F3BB086318D8A4EA0088CA3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3BB086418D8A4EA0088CA3C /* Build configuration list for PBXNativeTarget "testiOSItkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3BB086518D8A4EA0088CA3C /* Debug */,
+				F3BB086618D8A4EA0088CA3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3BB082718D8A4EA0088CA3C /* Project object */;
+}
